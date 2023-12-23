@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Iran;
+    src: url(./../../../../assets/fonts/IRANSans.woff2);
+}
+*{
+    font-family: Iran;
+}
+.continer{
+    height: 100%;
+    background-color: #dae5eb;
+}
+.login {
+    width: 15vw;
+    height: 6.5vh;
+    padding: 1.7%;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    font-size: 1.03rem;
+    font-weight: 500;
+}
+.login img {
+    position: absolute;
+    top: 0.5vh;
+    left: 8.4vw;
+    width: 3vw;
+    height: 3vh;
+    margin-left: .5vw;
+}

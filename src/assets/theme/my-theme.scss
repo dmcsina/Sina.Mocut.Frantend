@@ -1,0 +1,85 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$my-palette1: (
+    50 : #fbfcfd,
+    100 : #f4f7f9,
+    200 : #edf2f5,
+    300 : #e5edf1,
+    400 : #e0e9ee,
+    500 : #dae5eb,
+    600 : #d6e2e9,
+    700 : #d0dee5,
+    800 : #cbdae2,
+    900 : #c2d3dd,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+/* For use in src/lib/core/theming/_palette.scss */
+$my-palette2: (
+    50 : #e3e3e5,
+    100 : #b9babf,
+    200 : #8b8c94,
+    300 : #5c5e69,
+    400 : #393c48,
+    500 : #161928,
+    600 : #131624,
+    700 : #10121e,
+    800 : #0c0e18,
+    900 : #06080f,
+    A100 : #5370ff,
+    A200 : #2046ff,
+    A400 : #0028ec,
+    A700 : #0024d2,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #ffffff,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+
+$my-primary: mat.define-palette($my-palette1, 500);
+$my-accent: mat.define-palette($my-palette2, 500);
+
+$my-theme: mat.define-dark-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+@include mat.all-component-themes($my-theme);
