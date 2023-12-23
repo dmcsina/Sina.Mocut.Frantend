@@ -2,9 +2,6 @@
     font-family: Iran;
     src: url(./../../../../assets/fonts/IRANSans.woff2);
 }
-*{
-    font-family: Iran;
-}
 .continer{
     height: 100%;
     background-color: #dae5eb;
@@ -20,9 +17,12 @@
 }
 .login img {
     position: absolute;
-    top: 0.5vh;
-    left: 8.4vw;
+    top: 2vh;
+    left: 6.5vw;
     width: 3vw;
     height: 3vh;
     margin-left: .5vw;
+}
+.login p{
+    font-family: Iran;
 }

@@ -1,1 +1,26 @@
-<p>information works!</p>
+<div>
+    <div dir="rtl" >
+        <p class="text">لطفا فرم زیر را کامل کنید </p>
+    </div>
+    <div dir="rtl">
+        <form action=""  class="mat" >
+        <mat-form-field appearance="outline" hideRequiredMarker="">
+            <mat-label class="lable">نام کامل</mat-label>
+            <input formControlName="name" matInput >
+            <mat-icon  matSuffix>username</mat-icon>
+            <mat-error> اسم را وارد کنید</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline" hideRequiredMarker="">
+            <mat-label class="lable" >رمز عبور</mat-label>
+            <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error *ngIf="form.formLogin.controls.password.hasError('required')"> رمز عبور  را وارد کنید</mat-error>
+          </mat-form-field>
+          </form>
+    </div>
+    <div class="button">
+        <button class="bud" (click)="step()" mat-button color="primary">ادامه </button>
+    </div>
+</div>

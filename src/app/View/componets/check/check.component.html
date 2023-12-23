@@ -1,1 +1,23 @@
-<p>sina</p>
+<div >
+    <div id="heder" dir="rtl">
+        <h1 class="text">موکات</h1>
+    </div>
+    <div class="context" dir="rtl">
+        <p class="text">سلام ! خوش امدید</p>
+        <p class="text"> برای ادامه شماره تماس خود را وارد کنید</p>
+    </div>
+    <div class="mat" >
+        <form class="example-form" >
+            <mat-form-field class="input" appearance="outline" hideRequiredMarker>
+              <mat-label  class="text">شماره تماس</mat-label>
+              <span  class="text" matPrefix> &nbsp;+98 &nbsp;</span>
+              <input    type="tel" matInput placeholder="09XXXXXXXXXXX">
+              <mat-error >لطفا شماره تماس را وارد کنید</mat-error>
+              <mat-error >لطفا شماره تماس را درست وارد کنید</mat-error>
+            </mat-form-field>
+          </form>
+    </div>
+    <div class="button">
+        <button class="bud" (click)="step()" mat-button color="primary">ورود</button>
+    </div>
+</div>

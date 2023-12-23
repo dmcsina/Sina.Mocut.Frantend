@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Iran;
+    src: url(./../../../../assets/fonts/IRANSans.woff2);
+}
+.text{
+    font-family: Iran;
+    color: #dae5eb;
+    margin-right: 3vw;
+    margin-top: 4vh;
+}
+.mat{
+    display: grid;
+    grid-template-columns: 40vw;
+    justify-content: center;
+    gap: 3vh;
+}
+.lable{
+    color: #dae5eb;
+    font-family: Iran;
+    font-size: 1rem;
+}
+mat-icon{
+    color: #dae5eb;
+}
+mat-error{
+    font-family: Iran;
+    font-weight: 600;
+}
+.bud{
+    border: #dae5eb solid;
+    border-width: 2px;
+    width: 40vw;
+    font-size: 1.2rem;
+    font-family: Iran;
+    font-weight: 550;
+    height: 8vh;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Iran;
+    src: url(./../../../../assets/fonts/IRANSans.woff2);
+}
+*{
+    font-family: Iran;
+}
+
+.continer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#dae5eb;;
+}
+.card{
+    background-color: #161928;
+    width: 50vw;    
+    height: 55vh;
+    border-radius: 10px;
+}

@@ -1,1 +1,23 @@
-<p>code works!</p>
+<div class="continer">
+    <div dir="rtl">
+        <p class="text">کد ارسال شده را وارد کنید</p>
+    </div>
+    <div class="mat">
+        <form action="" >
+        <mat-form-field appearance="outline" hideRequiredMarker>
+            <mat-label class="lable" > کد را وارد کنید</mat-label>
+            <input    matInput >
+            <mat-icon  matSuffix>key</mat-icon>
+            <mat-error dir="rtl" >وارد کردن کد برای ادامه الزامی است</mat-error>
+            <mat-error dir="rtl" >کد را لطفا درست وارد کنید </mat-error>
+            <mat-error dir="rtl" *ngIf="">کد را لطفا درست وارد کنید </mat-error>
+        </mat-form-field>
+          </form>
+    </div>
+    <div class="counter">
+        <p>ثانیه تا ارسال مجدد کد <p>{{timeLeft}}</p>
+    </div>
+    <div class="button">
+        <button class="bud" (click)="step()" mat-button color="primary">ادامه </button>
+    </div>
+</div>
