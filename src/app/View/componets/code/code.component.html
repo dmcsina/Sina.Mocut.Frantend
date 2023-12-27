@@ -10,7 +10,7 @@
             <mat-icon  matSuffix>key</mat-icon>
             <mat-error dir="rtl" >وارد کردن کد برای ادامه الزامی است</mat-error>
             <mat-error dir="rtl" >کد را لطفا درست وارد کنید </mat-error>
-            <mat-error dir="rtl" *ngIf="">کد را لطفا درست وارد کنید </mat-error>
+            <mat-error dir="rtl" >کد را لطفا درست وارد کنید </mat-error>
         </mat-form-field>
           </form>
     </div>
@@ -18,6 +18,6 @@
         <p>ثانیه تا ارسال مجدد کد <p>{{timeLeft}}</p>
     </div>
     <div class="button">
-        <button class="bud" (click)="step()" mat-button color="primary">ادامه </button>
+        <button  (click)="step()" mat-button color="primary">ادامه </button>
     </div>
 </div>

@@ -26,7 +26,8 @@ mat-error{
     font-family: Iran;
     font-weight: 600;
 }
-.bud{
+.button button{
+    background-color: #dae5eb;
     border: #dae5eb solid;
     border-width: 2px;
     width: 40vw;
@@ -36,6 +37,7 @@ mat-error{
     height: 8vh;
 }
 .button{
+    // background-color: #dae5eb;
     display: flex;
     justify-content: center;
     margin-top: 3vh;

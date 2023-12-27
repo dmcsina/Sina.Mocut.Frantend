@@ -1,1 +1,25 @@
-<p>singin works!</p>
+<div>
+    <div dir="rtl">
+        <p class="text">رمز عبور حساب کاربری خود را وارد کنید </p>
+    </div>
+    <form class="box" >
+            <mat-form-field class="input" appearance="outline" hideRequiredMarker="" >
+              <mat-label class="lable">شماره تماس</mat-label>
+              <span  class="text1" matPrefix>&nbsp; +98 &nbsp;</span>
+              <input  type="tel" matInput placeholder="09XXXXXXXXXXX">
+              <mat-error > رمز عبور  را وارد کنید</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" hideRequiredMarker="" dir="rtl">
+              <mat-label class="lable">رمز عبور</mat-label>
+              <input  matInput [type]="hide ? 'password' : 'text'">
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+              <mat-error > رمز عبور  را وارد کنید</mat-error>
+            </mat-form-field>
+    </form>
+
+    <div class="bud">
+        <button  (click)="step()" mat-button color="primary">ادامه </button>
+    </div>
+</div>

@@ -11,7 +11,7 @@
             <mat-form-field class="input" appearance="outline" hideRequiredMarker>
               <mat-label  class="text">شماره تماس</mat-label>
               <span  class="text" matPrefix> &nbsp;+98 &nbsp;</span>
-              <input    type="tel" matInput placeholder="09XXXXXXXXXXX">
+              <input    type="tel" (keypress)="keypress.phonenumber($event)" matInput placeholder="09XXXXXXXXXXX">
               <mat-error >لطفا شماره تماس را وارد کنید</mat-error>
               <mat-error >لطفا شماره تماس را درست وارد کنید</mat-error>
             </mat-form-field>

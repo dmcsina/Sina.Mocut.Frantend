@@ -4,10 +4,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
+import { Keypress } from '../../../Model/Forms/Keypress';
 @Component({
   selector: 'app-check',
   standalone: true,
-  imports: [FormsModule, MatFormFieldModule, MatInputModule, MatIconModule],
+  imports: [FormsModule, MatFormFieldModule, MatInputModule, MatIconModule,Keypress],
   templateUrl: './check.component.html',
   styleUrl: './check.component.scss'
 })
